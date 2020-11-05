@@ -1,12 +1,13 @@
 import pandas as pd
 
-dataset = pd.read_csv('credit_data.csv')
+globalDataset = pd.read_csv('credit_data.csv')
 
 
-def amostragem_aleatoria_simples(dataset, amostras):
-    return dataset.sample(n=amostras, random_state=1)
+class AleatoriaSimples:
+    dataset = globalDataset
+    df_amostragem_aleatoria_simples = None
 
-
-df_amostragem_aleatoria_simples = amostragem_aleatoria_simples(dataset, 1000)
-print(df_amostragem_aleatoria_simples.shape)
-print(df_amostragem_aleatoria_simples.head())
+    def amostragem_aleatoria_simples(self, dataset, amostras):
+        sample = dataset.sample(n=amostras, random_state=1)
+        self.df_amostragem_aleatoria_simples = sample
+        return sample
