@@ -4,31 +4,29 @@ from estratificada import Estratificada
 from sistematica import Sistematica
 from reservatorio import Reservatorio
 
-# as_ins = AleatoriaSimples()
-# as_ins.amostragem_aleatoria_simples(globalDataset, 1000)
-# print(as_ins.df_amostragem_aleatoria_simples.shape)
-# print(as_ins.df_amostragem_aleatoria_simples.head())
-#
-# ag_ins = Agrupamento()
-# ag_ins.amostragem_agrupamento(globalDataset, 2)
-# print(ag_ins.df_amostragem_grupos.shape)
-# print(ag_ins.df_amostragem_grupos.head())
+as_ins = AleatoriaSimples()
+as_ins.amostragem_aleatoria_simples(globalDataset, 1000)
 
-# e_ins = Estratificada()
-# e_ins.amostragem_estratificada(globalDataset, 0.5)
-# print(e_ins.df_amostragem_estratificada.shape)
-# print(e_ins.df_amostragem_estratificada.head())
-# print(e_ins.df_amostragem_estratificada['c#default'].value_counts())
+ag_ins = Agrupamento()
+ag_ins.amostragem_agrupamento(globalDataset, 2)
 
-# asis_ins = Sistematica()
-# asis_ins.amostragem_sistematica(globalDataset, 1000)
-# print(asis_ins.df_amostragem_sistematica.shape)
-# print(asis_ins.df_amostragem_sistematica.head())
+e_ins = Estratificada()
+e_ins.amostragem_estratificada(globalDataset, 0.5)
 
-# r_ins = Reservatorio()
-# r_ins.amostragem_reservatorio(globalDataset, 1000)
-# print(r_ins.df_amostragem_reservatorio.shape)
-# print(r_ins.df_amostragem_reservatorio.head())
+asis_ins = Sistematica()
+asis_ins.amostragem_sistematica(globalDataset, 1000)
 
-# print("Idade média dos candidatos:", globalDataset['age'].mean())
-# print("Idade média dos candidatos (amostragem aleatória simples):", as_ins.df_amostragem_aleatoria_simples['age'].mean())
+r_ins = Reservatorio()
+r_ins.amostragem_reservatorio(globalDataset, 1000)
+
+print("Médias de Idade:")
+print("dataset:", globalDataset['age'].mean())
+print("amostragem aleatória simples:", as_ins.df_amostragem_aleatoria_simples['age'].mean())
+print("amostragem de grupos:", ag_ins.df_amostragem_grupos['age'].mean())
+print("amostragem estratificada:", e_ins.df_amostragem_estratificada['age'].mean())
+print("amostragem sistemática:", asis_ins.df_amostragem_sistematica['age'].mean())
+print("amostragem de reservatório:", r_ins.df_amostragem_reservatorio['age'].mean())
+
+print("Melhor forma de amostragem para esse dataset:")
+
+# todo: analisar e colocar a resposta
