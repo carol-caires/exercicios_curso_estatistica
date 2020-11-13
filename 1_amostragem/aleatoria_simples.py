@@ -1,6 +1,6 @@
 import pandas as pd
 
-globalDataset = pd.read_csv('credit_data.csv')
+globalDataset = pd.read_csv('../data/credit_data.csv')
 
 
 class AleatoriaSimples:

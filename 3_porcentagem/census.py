@@ -1,6 +1,6 @@
 import pandas as pd
 
-dataset = pd.read_csv('census.csv')
+dataset = pd.read_csv('../data/census.csv')
 
 education = dataset['education'].unique()
 

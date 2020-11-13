@@ -45,6 +45,6 @@ class Classificacao:
         return accuracy_score(previsoes, y_teste)
 
 
-dataset = pd.read_csv('csv_result-ebay_confianca_completo.csv')
+dataset = pd.read_csv('../data/csv_result-ebay_confianca_completo.csv')
 scores = Classificacao.predict(dataset)
 print(scores)

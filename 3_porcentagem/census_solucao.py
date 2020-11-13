@@ -6,7 +6,7 @@
 
 import pandas as pd
 
-dataset = pd.read_csv('census.csv')
+dataset = pd.read_csv('../data/census.csv')
 
 dataset2 = dataset[['income', 'education']]
 dataset3 = dataset2.groupby(['education', 'income'])['education'].count()
