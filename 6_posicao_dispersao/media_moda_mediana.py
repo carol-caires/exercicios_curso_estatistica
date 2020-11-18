@@ -56,3 +56,20 @@ mediana1 = statistics.median(dados_impar)
 mediana2 = statistics.median(dados)
 
 print("Mediana  - Statistics:\n", mediana1, mediana2)
+
+# Média ponderada
+
+notas = np.array([9, 8, 7, 3])
+pesos = np.array([1, 2, 3, 4])
+
+# Manual
+
+mponderada1 = (9 * 1 + 8 * 2 + 7 * 3 + 3 * 4) / (1 + 2 + 3 + 4)
+
+# Biblioteca padrão
+mponderada2 = (notas * pesos).sum() / pesos.sum()
+
+# Numpy
+mponderada3 = np.average(notas, weights=pesos)
+
+print("Média ponderada:\n", mponderada1, mponderada2, mponderada3)
