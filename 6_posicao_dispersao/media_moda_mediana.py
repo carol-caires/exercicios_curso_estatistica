@@ -8,7 +8,6 @@ dados = np.array([150, 151, 152, 152, 153, 154, 155, 155, 155, 155, 156, 156, 15
                   163, 163, 164, 164, 164, 165, 166, 167, 168, 168, 169, 170, 172,
                   173])
 
-
 # Média aritmética manual
 media1 = dados.sum() / len(dados)
 
@@ -73,3 +72,21 @@ mponderada2 = (notas * pesos).sum() / pesos.sum()
 mponderada3 = np.average(notas, weights=pesos)
 
 print("Média ponderada:\n", mponderada1, mponderada2, mponderada3)
+
+# Média Geométrica
+from scipy.stats.mstats import gmean
+
+print("Média Geométrica:", gmean(dados))
+
+# Média Harmômica
+from scipy.stats.mstats import hmean
+
+print("Média Harmômica:", hmean(dados))
+
+
+# Média Quadrática
+def qmean(dados):
+    return math.sqrt(sum(n * n for n in dados) / len(dados))
+
+
+print("Média Quadrática:", qmean(dados))
