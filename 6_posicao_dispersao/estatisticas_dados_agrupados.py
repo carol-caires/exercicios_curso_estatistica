@@ -1,3 +1,5 @@
+import math
+
 import pandas as pd
 
 '''
@@ -44,7 +46,7 @@ def get_estatisticas(dataframe):
     return media, moda, mediana
 
 
-print(get_estatisticas(dataset))
+print("Média: %.2f, Moda: %.2f, Mediana: %.2f" %(get_estatisticas(dataset)))
 
 
 # Quartil - mediana a 25% e 75%
@@ -68,4 +70,14 @@ def get_quartil(dataframe, q1=True):
     return q
 
 
-print(get_quartil(dataset), get_quartil(dataset, q1=False))
+print("Mediana a 25%%: %.2f, Mediana a 75%%: %.2f" %(get_quartil(dataset), get_quartil(dataset, q1=False)))
+
+# Desvio Padrão
+
+dataset['xi_2'] = dataset['xi'] * dataset['xi']
+dataset['fi_xi_2'] = dataset['fi'] * dataset['xi_2']
+colunas_ordenadas = ['inferior', 'superior', 'fi', 'xi', 'fi.xi', 'xi_2', 'fi_xi_2', 'Fi']
+dataset = dataset[colunas_ordenadas]
+dp = math.sqrt(dataset['fi_xi_2'].sum() / dataset['fi'].sum() - math.pow(dataset['fi.xi'].sum() / dataset['fi'].sum(), 2))
+
+print("Desvio padrão %.2f%%" %(dp))
