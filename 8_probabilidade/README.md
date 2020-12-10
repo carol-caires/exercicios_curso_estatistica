@@ -22,3 +22,13 @@ Considerando uma distribuição normal com média 24 e desvio padrão de 8, quai
 2. A vida útil de uma marca de pneus é representada por uma distribuição normal com média de 38.000 Km e desvio padrão de 3.000 Km
     1. Qual a probabilidade de que um pneu escolhido aleatoriamente tenha vida útil de 35.000 Km?
     2. Qual a probabilidade de que ele dure mais do que 44.000 Km?
+    
+### exercicio3.py
+
+1. 70% das pessoas que compraram o livro de Python são mulheres. Se 10 leitores forem selecionados randomicamente,
+qual a probabilidade de selecionarmos 7 mulheres?
+
+2. Em uma linha de produção de uma fábrica de parafusos, a probabilidade de obter um parafuso defeituoso é 0,05. 
+Tendo uma amostra de 50 peças, qual a probabilidade de obter:
+    - Um parafuso defeituoso
+    - Nenhum parafuso defeituoso
