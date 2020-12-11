@@ -30,5 +30,14 @@ qual a probabilidade de selecionarmos 7 mulheres?
 
 2. Em uma linha de produção de uma fábrica de parafusos, a probabilidade de obter um parafuso defeituoso é 0,05. 
 Tendo uma amostra de 50 peças, qual a probabilidade de obter:
-    - Um parafuso defeituoso
-    - Nenhum parafuso defeituoso
+- Um parafuso defeituoso
+- Nenhum parafuso defeituoso
+    
+### exercicio4.py
+
+1. Em uma linha de produção de uma fábrica de parafusos, a probabilidade é de obter 0,05 defeitos por UNIDADE. 
+Qual a probabilidade de uma unidade apresentar:
+- Um defeito
+- Nenhum defeito
+
+2. Um vendedor de uma loja vende em média 50 produtos por dia. Qual a probabilidade de vender somente 5 produtos no próximo dia?
