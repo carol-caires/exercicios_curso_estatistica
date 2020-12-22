@@ -53,14 +53,14 @@ resultados_forest_cv = np.array(resultados_forest_cv)
 alpha = 0.05
 
 
-from scipy.stats import shapiro
-print("Shapiro:", shapiro(resultados_naive_cv), shapiro(resultados_logistica_cv), shapiro(resultados_forest_cv))
+# from scipy.stats import shapiro
+# print("Shapiro:", shapiro(resultados_naive_cv), shapiro(resultados_logistica_cv), shapiro(resultados_forest_cv))
 
-from scipy.stats import normaltest
-print("D'Agostinho:", normaltest(resultados_naive_cv), normaltest(resultados_logistica_cv), normaltest(resultados_forest_cv))
+# from scipy.stats import normaltest
+# print("D'Agostinho:", normaltest(resultados_naive_cv), normaltest(resultados_logistica_cv), normaltest(resultados_forest_cv))
 
-from scipy.stats import anderson
-print("Anderson-Darling:", anderson(resultados_naive_cv).statistic, anderson(resultados_logistica_cv).statistic, anderson(resultados_forest_cv).statistic)
+# from scipy.stats import anderson
+# print("Anderson-Darling:", anderson(resultados_naive_cv).statistic, anderson(resultados_logistica_cv).statistic, anderson(resultados_forest_cv).statistic)
 
 """
     A interpretação dos resultados obtidos acima é de que os 3 arrays tem os dados distribuidos de forma normal,
