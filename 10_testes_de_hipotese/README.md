@@ -15,3 +15,7 @@ Depois siga o seguinte roteiro:
 - Faça a importação do pacote from scipy.stats import ttest_rel para realizar o teste de hipótese. Caso tenha dúvidas, consulte aqui a documentação
 
 - Realize o teste de hipótese para verificar se as distribuições são ou não são diferentes
+
+## Exercício 2
+
+Nas aulas anteriores nós fizemos os testes de hipóteses utilizando técnicas de estatística não paramétrica. Porém, como os resultados dos algoritmos seguem uma distribuição normal (conforme os testes de normalidade realizados), o objetivo desta tarefa é aplicar o ANOVA e também o teste de Tukey para comparar os resultados dos algoritmos
