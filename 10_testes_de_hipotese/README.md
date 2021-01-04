@@ -1,11 +1,16 @@
 # Teste de Hipótese
 
 Para verificar se há diferença estatística entre dois ou mais conjuntos de dados, podemos usar os testes 
-ANOVA e Tukey para dados normais e Kruskal-Wallis e Nemenyi para dados que não temos certeza se são normais ou não.
+ANOVA e Tukey para dados normais e Kruskal-Wallis / Wilcoxon / Friedman e Nemenyi para dados que não temos certeza se são normais ou não.
 
-O ANOVA e o Kruskal-Wallis rejeitam a hipótese nula se há diferença em pelo menos 2 dos grupos comparados, mas não
+O ANOVA e o Kruskal-Wallis / Wilcoxon / Friedman rejeitam a hipótese nula se há diferença em pelo menos 2 dos grupos comparados, mas não
 nos diz quais são esses grupos. Para verificar quais são esses grupos, usar os testes de Tukey e Nemenyi, pois eles fazem
 comparações multiplas.
+
+Friedman = compara 3 grupos ou mais  
+Wilcoxon = compara 2 grupos
+Kruskal-Wallis = compara 2 grupos (extensão do Wilcoxon)
+
 
 Aqui explica melhor a diferenças desses testes: https://operdata.com.br/blog/teste-de-kruskal-wallis-e-o-teste-de-nemenyi/
 
