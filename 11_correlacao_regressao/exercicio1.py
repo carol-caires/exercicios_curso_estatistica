@@ -41,3 +41,10 @@ print(corr['price'][corr['price'].values > q.values[0]])
 # import matplotlib.pyplot as plt
 # fig, ax = plt.subplots(figsize=(15,15))
 # ax = sns.heatmap(dataset.corr(), annot=True)
+
+# yellowbrick - https://www.scikit-yb.org/en/latest/quickstart.html
+# from yellowbrick.target import FeatureCorrelation
+#
+# grafico = FeatureCorrelation(labels = dataset.columns[1:])
+# grafico.fit(dataset.iloc[:, 1:16].values, dataset.iloc[:, 0].values)
+# grafico.show();
