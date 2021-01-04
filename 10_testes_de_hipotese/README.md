@@ -1,5 +1,14 @@
 # Teste de Hipótese
 
+Para verificar se há diferença estatística entre dois ou mais conjuntos de dados, podemos usar os testes 
+ANOVA e Tukey para dados normais e Kruskal-Wallis e Nemenyi para dados que não temos certeza se são normais ou não.
+
+O ANOVA e o Kruskal-Wallis rejeitam a hipótese nula se há diferença em pelo menos 2 dos grupos comparados, mas não
+nos diz quais são esses grupos. Para verificar quais são esses grupos, usar os testes de Tukey e Nemenyi, pois eles fazem
+comparações multiplas.
+
+Aqui explica melhor a diferenças desses testes: https://operdata.com.br/blog/teste-de-kruskal-wallis-e-o-teste-de-nemenyi/
+
 ## Exercício
 
 Assim como você pode fazer testes de hipóteses usando a estatística Z, é também possível utilizar a estatística T da Distribuição T Student para realizar testes de hipóteses quando você possui poucos registros (até 30 amostras). Implemente a base de dados abaixo com a alturas de somente 9 pessoas
